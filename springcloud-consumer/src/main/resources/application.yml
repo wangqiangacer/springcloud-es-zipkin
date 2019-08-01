@@ -1,0 +1,13 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: USER-CONSUMER-FEIGN #不要使用下划线
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+eureka:
+  client:
+    registerWithEureka: true #不注册到Eureka,不在注册中心显示
+    service-url:
+      defaultZone: http://localhost:18761/eureka
+      #defaultZone: http://192.168.0.124:7002/eureka
